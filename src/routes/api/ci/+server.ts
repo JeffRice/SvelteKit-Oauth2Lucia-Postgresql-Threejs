@@ -2,7 +2,7 @@ import { auth } from '$lib/server/lucia';
 import { createPool } from '@vercel/postgres';
 const db = createPool();
 
-/* @type {import('./$types').RequestHandler} */
+/** @type {import('./$types').RequestHandler} */
 export async function POST({ locals, request }) {
 
   // get the data parameters from the request
